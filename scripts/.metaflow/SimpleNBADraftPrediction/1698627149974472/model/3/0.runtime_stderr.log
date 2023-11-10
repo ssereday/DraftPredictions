@@ -1,0 +1,42 @@
+[MFLOG|0|2023-10-30T00:52:37.609106Z|runtime|4615ecd6-0991-4f92-85f9-1adf99fc52bc]<flow SimpleNBADraftPrediction step model> failed:
+[MFLOG|0|2023-10-30T00:52:37.920156Z|runtime|4d442e4b-5bf6-4f54-ae5c-3cc4ff8a31ef]    Internal error
+[MFLOG|0|2023-10-30T00:52:37.921199Z|runtime|4fe6f276-2e67-4fc9-840a-5f319559f4cd]Traceback (most recent call last):
+[MFLOG|0|2023-10-30T00:52:37.921414Z|runtime|285994f3-9d98-4468-abed-aaeb8f52bd82]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-30T00:52:37.921593Z|runtime|528e9e7f-14ef-479c-98d2-240bedff521b]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-30T00:52:37.921761Z|runtime|e0eb835c-8b19-4cca-ac31-26e973768cf4]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-30T00:52:37.921929Z|runtime|5628df7d-7a61-4832-909f-3fbb3fd55886]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-30T00:52:38.244437Z|runtime|b9de4fe7-e0aa-4294-b4ce-56602a906172]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-30T00:52:38.244944Z|runtime|bc23e113-2d85-4ab1-9e30-fc6a1cf9a44d]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-30T00:52:38.245243Z|runtime|2e72c2e5-9b07-433b-b32b-be7364421191]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-30T00:52:38.245509Z|runtime|9f39b740-fe94-443f-9edb-728df63875d0]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-30T00:52:38.245764Z|runtime|df8e076b-61b3-417f-992b-fbbfffd34545]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-30T00:52:38.246024Z|runtime|6bbfd7e5-b554-47ef-a92f-ec0ef74a235f]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-30T00:52:38.246276Z|runtime|51e83d31-9f0b-4aa1-ada5-5016b8757a50]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-30T00:52:38.246527Z|runtime|ebdfdd55-95a7-4a7d-a2aa-195a6bf6ba87]    return callback(args, kwargs)
+[MFLOG|0|2023-10-30T00:52:38.246778Z|runtime|ce96a652-6069-4816-a8ec-18778ccaeb37]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-30T00:52:38.246912Z|runtime|2c22de23-7ce2-4861-9ec0-98d3e05271c0]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-30T00:52:38.247138Z|runtime|d272770d-c955-48c7-8963-e1f7aeb8244b]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-30T00:52:38.247390Z|runtime|88930eaa-88d0-4e64-b841-45fe28a9c4b9]    task.run_step(
+[MFLOG|0|2023-10-30T00:52:38.247656Z|runtime|9a652310-d7b0-4b21-874b-17132bdc7f8e]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-30T00:52:38.247906Z|runtime|6b4033e4-903c-42d6-a62d-41f2244383f3]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-30T00:52:38.248156Z|runtime|2d02eb73-7458-4ae2-9ddf-88ee811bb135]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-30T00:52:38.248407Z|runtime|25babd34-0bea-47e4-86ca-aba4c2efe25f]    step_function()
+[MFLOG|0|2023-10-30T00:52:38.248654Z|runtime|d47e92d8-b890-449f-ac63-f9806140dc30]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 170, in model
+[MFLOG|0|2023-10-30T00:52:38.248906Z|runtime|d890bd81-342d-4229-9238-3486b21c1f31]    regr.fit(self.train[self.col_features], self.train['MINPG'])
+[MFLOG|0|2023-10-30T00:52:38.249168Z|runtime|4b9ccab8-8ccf-483b-9c99-623dac111492]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/ensemble/_forest.py", line 304, in fit
+[MFLOG|0|2023-10-30T00:52:38.249418Z|runtime|0a5df71a-bd73-48e8-9d48-ad4efff53170]    X, y = self._validate_data(X, y, multi_output=True,
+[MFLOG|0|2023-10-30T00:52:38.249676Z|runtime|7d0a9064-9c5d-44cd-8724-9872d4c1e0b6]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/base.py", line 433, in _validate_data
+[MFLOG|0|2023-10-30T00:52:38.249930Z|runtime|16150a8e-d140-4b73-a86c-8b2232b90424]    X, y = check_X_y(X, y, check_params)
+[MFLOG|0|2023-10-30T00:52:38.250175Z|runtime|6caf00cd-cfc5-4736-b430-c92aae488e41]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+[MFLOG|0|2023-10-30T00:52:38.250455Z|runtime|c56fde8e-7792-4035-890f-d53951c5d54d]    return f(args, kwargs)
+[MFLOG|0|2023-10-30T00:52:38.250741Z|runtime|2aad1245-418f-43bd-adb0-a4864c2c37c4]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/utils/validation.py", line 871, in check_X_y
+[MFLOG|0|2023-10-30T00:52:38.250874Z|runtime|f43fefc1-6988-4e6a-8171-83526cf04c12]    X = check_array(X, accept_sparse=accept_sparse,
+[MFLOG|0|2023-10-30T00:52:38.251083Z|runtime|061b1168-e12e-45f2-ae71-99f8e2411463]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+[MFLOG|0|2023-10-30T00:52:38.251355Z|runtime|aa0bc68a-089c-4851-a254-40291f78559a]    return f(args, kwargs)
+[MFLOG|0|2023-10-30T00:52:38.251623Z|runtime|680d9279-7bcb-4997-9831-edf05f221313]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/utils/validation.py", line 720, in check_array
+[MFLOG|0|2023-10-30T00:52:38.251877Z|runtime|2b63b785-64a4-4ce6-a394-7aef21f62a29]    _assert_all_finite(array,
+[MFLOG|0|2023-10-30T00:52:38.252116Z|runtime|f6e66311-b753-4fb6-94dd-4e62c9c86f4f]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/utils/validation.py", line 103, in _assert_all_finite
+[MFLOG|0|2023-10-30T00:52:38.252355Z|runtime|4567f2d8-cce0-4667-a764-9f363c3e3465]    raise ValueError(
+[MFLOG|0|2023-10-30T00:52:38.252585Z|runtime|f3b73cb2-0be9-4b19-b929-70d7decf5153]ValueError: Input contains NaN, infinity or a value too large for dtype('float32').
+[MFLOG|0|2023-10-30T00:52:38.252822Z|runtime|16351529-54c7-4e21-9ee5-d0c4287f853c]
+[MFLOG|0|2023-10-30T00:52:38.253800Z|runtime|19c6bacc-da91-4377-8ddc-562b902c5961]Task failed.

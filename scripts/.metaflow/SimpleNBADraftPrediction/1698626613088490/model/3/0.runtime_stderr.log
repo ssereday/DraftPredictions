@@ -1,0 +1,43 @@
+[MFLOG|0|2023-10-30T00:46:01.458850Z|runtime|c77741d4-a6e1-44a9-954d-eb21c0b78247]<flow SimpleNBADraftPrediction step model> failed:
+[MFLOG|0|2023-10-30T00:46:01.705649Z|runtime|2cf66552-5760-4704-a221-7aeb40c52620]    Internal error
+[MFLOG|0|2023-10-30T00:46:01.706693Z|runtime|e9d94536-ab7b-4c98-903e-3cc486deb802]Traceback (most recent call last):
+[MFLOG|0|2023-10-30T00:46:01.706912Z|runtime|bf8ea1a7-63f5-42a3-b82f-8f90c449c539]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3361, in get_loc
+[MFLOG|0|2023-10-30T00:46:01.707081Z|runtime|4c83ce8c-de3a-4745-a3d4-327a96b2423b]    return self._engine.get_loc(casted_key)
+[MFLOG|0|2023-10-30T00:46:01.707250Z|runtime|f3e39f36-b997-40b7-bab5-e8d310e7ea82]  File "pandas/_libs/index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+[MFLOG|0|2023-10-30T00:46:01.707411Z|runtime|9b9f9944-ef23-47b8-8221-efeec298ccbd]  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+[MFLOG|0|2023-10-30T00:46:01.707566Z|runtime|4d106487-6ec5-412c-b162-6373ec26e4cf]  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+[MFLOG|0|2023-10-30T00:46:01.707721Z|runtime|43f55d66-c54b-4d66-942d-df0139e1f1b9]  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+[MFLOG|0|2023-10-30T00:46:01.707877Z|runtime|d431cf0a-2d8a-49e1-b6c3-689e80f9fd69]KeyError: 'MINPG'
+[MFLOG|0|2023-10-30T00:46:01.708039Z|runtime|99de559b-b357-4879-b7c2-03c323c686fc]
+[MFLOG|0|2023-10-30T00:46:01.708193Z|runtime|5d54c30e-d850-41be-b3f1-7ee8887538a3]The above exception was the direct cause of the following exception:
+[MFLOG|0|2023-10-30T00:46:01.708348Z|runtime|e9591855-eb6c-4f9e-8e12-946443e83592]
+[MFLOG|0|2023-10-30T00:46:01.708499Z|runtime|0ef7ea50-c1dc-4eae-8e19-18007ef391af]Traceback (most recent call last):
+[MFLOG|0|2023-10-30T00:46:01.708683Z|runtime|798d6a11-0c8c-4946-8576-74d34ad390f3]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-30T00:46:01.708856Z|runtime|817c89a1-c010-40d3-bf16-400cc61e4f57]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-30T00:46:01.709010Z|runtime|87737ef8-314a-4a65-a80a-48c5fab35367]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-30T00:46:01.709169Z|runtime|4d318e58-cc36-4a6c-a3c0-931a2d124d39]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-30T00:46:02.029863Z|runtime|532c7c6d-60f4-4632-9de3-3cfa1081a2e7]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-30T00:46:02.030336Z|runtime|81e3a8be-d877-460f-bae3-6f623442fd55]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-30T00:46:02.030640Z|runtime|a7afc083-270e-4eb0-bd15-9d2a5ee11630]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-30T00:46:02.030866Z|runtime|e5a30746-9adc-4bb9-8e65-8a46d0d8a9c7]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-30T00:46:02.031083Z|runtime|d9c55722-cf30-45a0-8ce0-70bd34a143ad]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-30T00:46:02.031400Z|runtime|ad965e08-c020-458b-9433-2c29655bbf69]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-30T00:46:02.031680Z|runtime|1e539d95-86b2-49da-ad44-d98d6bed5497]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-30T00:46:02.031850Z|runtime|831a6fee-9afc-4cc6-8770-e304a5cadfa3]    return callback(args, kwargs)
+[MFLOG|0|2023-10-30T00:46:02.031985Z|runtime|2cf54429-7760-4eb4-b63b-86f903c8ace3]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-30T00:46:02.032118Z|runtime|1dfac02a-50f8-4abb-8d38-1682df3afaf1]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-30T00:46:02.032251Z|runtime|62aa49b3-7205-4449-89a3-45ae07cc2cf8]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-30T00:46:02.032384Z|runtime|8e062940-0f52-4d2a-b04f-fcf7be6950db]    task.run_step(
+[MFLOG|0|2023-10-30T00:46:02.032516Z|runtime|ae16597c-5209-441c-9af8-b686f655414b]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-30T00:46:02.032648Z|runtime|9ddb7b2f-3432-4635-b891-ae96061ee0d5]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-30T00:46:02.032780Z|runtime|651b2afa-7116-4474-a77e-8e1ba21fba8e]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-30T00:46:02.032913Z|runtime|0c784fc2-3080-42cf-b8bd-89d3489b568a]    step_function()
+[MFLOG|0|2023-10-30T00:46:02.033045Z|runtime|0fa82e75-ffe0-4254-9682-ed42d56cf1da]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 171, in model
+[MFLOG|0|2023-10-30T00:46:02.033180Z|runtime|9b5d59a7-6d05-416b-8734-f27edcf1cc1f]    regr.fit(self.train[self.col_features], self.train['MINPG'])
+[MFLOG|0|2023-10-30T00:46:02.033313Z|runtime|eba63a59-4d2a-4b3f-aacd-a08dd28ed85f]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3458, in __getitem__
+[MFLOG|0|2023-10-30T00:46:02.033445Z|runtime|025ed9aa-fecc-48ce-90db-b0d84279d75f]    indexer = self.columns.get_loc(key)
+[MFLOG|0|2023-10-30T00:46:02.033577Z|runtime|07792edb-8083-4f9e-9f03-f5848ae26e63]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3363, in get_loc
+[MFLOG|0|2023-10-30T00:46:02.033709Z|runtime|e84890f3-7364-4d3f-aea0-2ed3a367d51a]    raise KeyError(key) from err
+[MFLOG|0|2023-10-30T00:46:02.033861Z|runtime|d3e7c528-ee16-404d-b732-a699f5dfb4b3]KeyError: 'MINPG'
+[MFLOG|0|2023-10-30T00:46:02.034013Z|runtime|b2d00ac3-a936-41f5-8901-1895ae4db70a]
+[MFLOG|0|2023-10-30T00:46:02.034658Z|runtime|8eef477a-2819-46d8-9d57-84c2ca6bc296]Task failed.

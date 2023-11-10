@@ -1,0 +1,7 @@
+[MFLOG|0|2023-10-29T22:53:58.086539Z|runtime|e9b560ec-f4ec-4bcc-8241-4ce86a3a33ee]Index(['League', 'FirstName', 'LastName', 'Pos.', 'Type', 'From', 'To', 'G',
+[MFLOG|0|2023-10-29T22:53:58.378870Z|runtime|7c9b07ca-c402-4f93-8f43-8af76b2f084e]       'GS', 'MIN', 'FGM', 'FGA', '3FGM', '3FGA', 'FTM', 'FTA', 'OFF', 'DEF',
+[MFLOG|0|2023-10-29T22:53:58.379014Z|runtime|3e8719cf-ada3-4c8f-ba9b-a941b9a4e81c]       'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', 'PTS', 'Unnamed: 28', 'G.1',
+[MFLOG|0|2023-10-29T22:53:58.379150Z|runtime|18e858bc-0c02-4748-abd8-d5203f1315b9]       'GS.1', 'MIN.1', 'FGM.1', 'FGA.1', '3FGM.1', '3FGA.1', 'FTM.1', 'FTA.1',
+[MFLOG|0|2023-10-29T22:53:58.379286Z|runtime|7088d901-00bf-424b-9023-250d8df611b9]       'OFF.1', 'DEF.1', 'REB.1', 'AST.1', 'STL.1', 'BLK.1', 'TO.1', 'PF.1',
+[MFLOG|0|2023-10-29T22:53:58.379426Z|runtime|dd579060-5790-4918-81fe-e141aa2b7bd3]       'PTS.1'],
+[MFLOG|0|2023-10-29T22:53:58.379558Z|runtime|28c3dfc1-830d-460e-af6e-762fd38f13e6]      dtype='object')

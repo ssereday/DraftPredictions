@@ -1,0 +1,48 @@
+[MFLOG|0|2023-10-29T23:47:52.280836Z|runtime|b75cc37d-eb5a-4ef5-9128-ae8ff3c7cec8]Index(['League', 'FirstName', 'LastName', 'Pos.', 'Type', 'From', 'To', 'G',
+[MFLOG|0|2023-10-29T23:47:52.895192Z|runtime|94a87384-5623-4576-91ca-2a5aaa0ddd21]       'GS', 'MIN', 'FGM', 'FGA', '3FGM', '3FGA', 'FTM', 'FTA', 'OFF', 'DEF',
+[MFLOG|0|2023-10-29T23:47:52.895515Z|runtime|236bbfc9-9c4a-4038-8fc3-9a0e2fd523e3]       'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', 'PTS', 'Unnamed: 28', 'GPG',
+[MFLOG|0|2023-10-29T23:47:52.895694Z|runtime|fcca0620-2f14-49ac-9eaf-c1001cbc8b55]       'GSPG', 'MINPG', 'FGMPG', 'FGAPG', '3FGMPG', '3FGAPG', 'FTMPG', 'FTAPG',
+[MFLOG|0|2023-10-29T23:47:52.895866Z|runtime|39e7fc5d-990e-4004-a7be-c11c19063e55]       'OFFPG', 'DEFPG', 'REBPG', 'ASTPG', 'STLPG', 'BLKPG', 'TOPG', 'PFPG',
+[MFLOG|0|2023-10-29T23:47:52.896034Z|runtime|b84de7a7-3add-4c78-8a71-4d3000973529]       'PTSPG'],
+[MFLOG|0|2023-10-29T23:47:52.896194Z|runtime|6df41419-d7b4-482a-afcf-261fbe40d4d9]      dtype='object')
+[MFLOG|0|2023-10-29T23:47:52.896360Z|runtime|a3469a8b-302f-46f1-9e7b-68067ff755c5]['last_yr_college', 'yrs_since_college', 'yrs_college', 'CC_college', 'FR_college', 'DNP_college']
+[MFLOG|0|2023-10-29T23:47:53.570807Z|runtime|03820efc-38af-40f3-90ea-3ace371327b9]plyryrs.columns
+[MFLOG|0|2023-10-29T23:47:53.570949Z|runtime|3bbd9ddb-aa8f-4791-9486-0e1e10b1f2c8]Index(['FirstName', 'LastName', 'yrs_college', 'first_yr_college',
+[MFLOG|0|2023-10-29T23:47:53.571082Z|runtime|e4be9486-e787-4154-8fe3-2b8e572d09ac]       'last_yr_college', 'last_college', 'notes_college', 'CC_college',
+[MFLOG|0|2023-10-29T23:47:53.571215Z|runtime|8617b5a9-3943-484f-bf01-01743cc52aca]       'FR_college', 'DNP_college'],
+[MFLOG|0|2023-10-29T23:47:53.571348Z|runtime|0d2208cf-fa06-43b3-a7a4-f60fa169c04e]      dtype='object')
+[MFLOG|0|2023-10-29T23:47:53.571481Z|runtime|02a9b3c2-9384-4226-b6b6-de148ecf4411]college_career columns
+[MFLOG|0|2023-10-29T23:47:53.571612Z|runtime|cfb2dc78-a90b-4cfc-8a07-ccee9ffc6c0a]Index(['FirstName', 'LastName', 'G_college', 'GS_college', 'MINPG_college',
+[MFLOG|0|2023-10-29T23:47:53.571745Z|runtime|6abaf368-278c-49aa-9e78-28e389ee7f88]       'FGMPG_college', 'FGAPG_college', '3FGMPG_college', '3FGAPG_college',
+[MFLOG|0|2023-10-29T23:47:53.571878Z|runtime|67f7c757-5d63-4045-8e98-7704f4b8e431]       'FTMPG_college', 'FTAPG_college', 'OFFPG_college', 'DEFPG_college',
+[MFLOG|0|2023-10-29T23:47:53.572012Z|runtime|977be606-689c-4da8-8302-28503fb4d287]       'REBPG_college', 'ASTPG_college', 'STLPG_college', 'BLKPG_college',
+[MFLOG|0|2023-10-29T23:47:53.572142Z|runtime|e1369ca6-3d10-4231-8aed-ce1edf1b2ce1]       'TOPG_college', 'PFPG_college', 'PTSPG_college', 'yrs_college_x',
+[MFLOG|0|2023-10-29T23:47:53.572274Z|runtime|4b863bde-5168-46bf-aa7e-84d7ac7408d0]       'first_yr_college_x', 'last_yr_college_x', 'last_college_x',
+[MFLOG|0|2023-10-29T23:47:53.572406Z|runtime|efd8c086-fced-401c-9656-ac6750c58132]       'notes_college_x', 'CC_college_x', 'FR_college_x', 'DNP_college_x',
+[MFLOG|0|2023-10-29T23:47:53.572536Z|runtime|827c4c74-8584-4c2e-b92c-4dbe30110ca9]       'FGM36_college', 'FGA36_college', '3FGM36_college', '3FGA36_college',
+[MFLOG|0|2023-10-29T23:47:53.572676Z|runtime|4b863169-92aa-4e48-8e12-0c480a3ff6f8]       'FTM36_college', 'FTA36_college', 'OFF36_college', 'DEF36_college',
+[MFLOG|0|2023-10-29T23:47:53.572809Z|runtime|7cd99b76-41cd-4845-b954-9cb8d28ef065]       'REB36_college', 'AST36_college', 'STL36_college', 'BLK36_college',
+[MFLOG|0|2023-10-29T23:47:53.572939Z|runtime|100b3487-4a09-4d7f-8808-46d87acbbcd7]       'TO36_college', 'PF36_college', 'PTS36_college', 'yrs_college_y',
+[MFLOG|0|2023-10-29T23:47:53.573071Z|runtime|aa9644a0-ae0e-4df0-9162-4667bd7f7cc1]       'first_yr_college_y', 'last_yr_college_y', 'last_college_y',
+[MFLOG|0|2023-10-29T23:47:53.573202Z|runtime|d38a5687-2825-4c28-a8e3-c0d87b74078f]       'notes_college_y', 'CC_college_y', 'FR_college_y', 'DNP_college_y'],
+[MFLOG|0|2023-10-29T23:47:53.573332Z|runtime|baf54f31-85ff-44b7-b709-f053968cf24e]      dtype='object')
+[MFLOG|0|2023-10-29T23:47:53.573465Z|runtime|5c08449d-914d-4eab-8c5b-b292d18eb862]ndf columns
+[MFLOG|0|2023-10-29T23:47:53.573599Z|runtime|80f7b15b-5ad4-4e71-b6e7-069c6eafdd84]Index(['League', 'FirstName', 'LastName', 'Pos.', 'Type', 'From', 'To', 'G',
+[MFLOG|0|2023-10-29T23:47:53.573730Z|runtime|3fc48bab-39ba-4bfd-bc18-8785da93d741]       'GS', 'MIN', 'FGM', 'FGA', '3FGM', '3FGA', 'FTM', 'FTA', 'OFF', 'DEF',
+[MFLOG|0|2023-10-29T23:47:53.573861Z|runtime|48a911d8-6e89-4ef6-97bb-50bc51c38d0d]       'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', 'PTS', 'Unnamed: 28', 'GPG',
+[MFLOG|0|2023-10-29T23:47:53.573992Z|runtime|b684b7a4-d76d-458c-aa5d-6668be4e267b]       'GSPG', 'MINPG', 'FGMPG', 'FGAPG', '3FGMPG', '3FGAPG', 'FTMPG', 'FTAPG',
+[MFLOG|0|2023-10-29T23:47:53.574124Z|runtime|52989edd-d5aa-4e13-9fb0-fad04f46d538]       'OFFPG', 'DEFPG', 'REBPG', 'ASTPG', 'STLPG', 'BLKPG', 'TOPG', 'PFPG',
+[MFLOG|0|2023-10-29T23:47:53.574256Z|runtime|d3bdcb37-b55c-4af6-93ac-fc16914d9e5a]       'PTSPG', 'G_college', 'GS_college', 'MINPG_college', 'FGMPG_college',
+[MFLOG|0|2023-10-29T23:47:53.574387Z|runtime|25b42ca6-6d0e-4816-95cf-0cc592f823b5]       'FGAPG_college', '3FGMPG_college', '3FGAPG_college', 'FTMPG_college',
+[MFLOG|0|2023-10-29T23:47:53.574517Z|runtime|05b31aa5-4d12-4b82-8ccc-4f58bdc34459]       'FTAPG_college', 'OFFPG_college', 'DEFPG_college', 'REBPG_college',
+[MFLOG|0|2023-10-29T23:47:53.574652Z|runtime|3e0fad00-ef15-463f-ac2e-297fabd6eae3]       'ASTPG_college', 'STLPG_college', 'BLKPG_college', 'TOPG_college',
+[MFLOG|0|2023-10-29T23:47:53.574798Z|runtime|2132e49d-0b09-4022-918f-c46f663d5da3]       'PFPG_college', 'PTSPG_college', 'yrs_college_x', 'first_yr_college_x',
+[MFLOG|0|2023-10-29T23:47:53.574934Z|runtime|7c1800ac-5412-400c-93a0-562bdd47c83e]       'last_yr_college_x', 'last_college_x', 'notes_college_x',
+[MFLOG|0|2023-10-29T23:47:53.575065Z|runtime|3d0f9f53-6e50-4633-b44d-4266d54a0bb2]       'CC_college_x', 'FR_college_x', 'DNP_college_x', 'FGM36_college',
+[MFLOG|0|2023-10-29T23:47:53.575195Z|runtime|3c3dd2df-5f59-48d4-a21a-aa87c07c0ec3]       'FGA36_college', '3FGM36_college', '3FGA36_college', 'FTM36_college',
+[MFLOG|0|2023-10-29T23:47:53.575330Z|runtime|949fd657-f5cc-49c5-9bd5-9f3bf1f0efa6]       'FTA36_college', 'OFF36_college', 'DEF36_college', 'REB36_college',
+[MFLOG|0|2023-10-29T23:47:53.575462Z|runtime|22369521-120e-44d9-b975-9a920dea446d]       'AST36_college', 'STL36_college', 'BLK36_college', 'TO36_college',
+[MFLOG|0|2023-10-29T23:47:53.575592Z|runtime|e189be93-ddf2-4834-bb0b-b3c1f8a45c32]       'PF36_college', 'PTS36_college', 'yrs_college_y', 'first_yr_college_y',
+[MFLOG|0|2023-10-29T23:47:53.575722Z|runtime|03b4ff81-6b89-479b-9b23-af7a3546e036]       'last_yr_college_y', 'last_college_y', 'notes_college_y',
+[MFLOG|0|2023-10-29T23:47:53.575853Z|runtime|472465ca-c914-4b67-8792-164ca2339e83]       'CC_college_y', 'FR_college_y', 'DNP_college_y', 'rand', 'train_ind'],
+[MFLOG|0|2023-10-29T23:47:53.575985Z|runtime|0953c69c-c272-4298-a816-5c49c06973af]      dtype='object')

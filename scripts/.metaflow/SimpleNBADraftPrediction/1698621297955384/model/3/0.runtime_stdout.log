@@ -1,0 +1,8 @@
+[MFLOG|0|2023-10-29T23:16:04.899808Z|runtime|56eea470-eaae-4ae8-b900-efbcd55de25e]Index(['League', 'FirstName', 'LastName', 'Pos.', 'Type', 'From', 'To', 'G',
+[MFLOG|0|2023-10-29T23:16:05.398258Z|runtime|7dd94e2d-0248-4e84-a9cb-3fe1c7cc0705]       'GS', 'MIN', 'FGM', 'FGA', '3FGM', '3FGA', 'FTM', 'FTA', 'OFF', 'DEF',
+[MFLOG|0|2023-10-29T23:16:05.398586Z|runtime|4b6b199c-f11f-49f1-a762-f5bc8d3c1fb0]       'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', 'PTS', 'Unnamed: 28', 'GPG',
+[MFLOG|0|2023-10-29T23:16:05.398779Z|runtime|29ea98a1-9091-404a-a1a0-9d3e8986a06d]       'GSPG', 'MINPG', 'FGMPG', 'FGAPG', '3FGMPG', '3FGAPG', 'FTMPG', 'FTAPG',
+[MFLOG|0|2023-10-29T23:16:05.398952Z|runtime|e0adfdfd-84ea-4a4e-887e-69433a9f839e]       'OFFPG', 'DEFPG', 'REBPG', 'ASTPG', 'STLPG', 'BLKPG', 'TOPG', 'PFPG',
+[MFLOG|0|2023-10-29T23:16:05.399115Z|runtime|e7d2481a-ea78-4f32-a4c8-7a7a4e3daf13]       'PTSPG'],
+[MFLOG|0|2023-10-29T23:16:05.399274Z|runtime|5c6b921a-2810-46e8-bc7b-d01dd006766d]      dtype='object')
+[MFLOG|0|2023-10-29T23:16:05.399437Z|runtime|aae4aea7-71b3-48c9-aa7d-2d597ffb8cf2]['last_yr_college', 'yrs_since_college', 'G_college', 'MINPG_college', 'yrs_college', 'CC_college', 'FR_college', 'DNP_college']

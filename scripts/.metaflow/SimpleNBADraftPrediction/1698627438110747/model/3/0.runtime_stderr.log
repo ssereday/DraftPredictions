@@ -1,0 +1,34 @@
+[MFLOG|0|2023-10-30T00:57:26.928816Z|runtime|61f0c647-a118-4daa-bdbb-1380d157b011]<flow SimpleNBADraftPrediction step model> failed:
+[MFLOG|0|2023-10-30T00:57:27.248339Z|runtime|a8b82b86-fe49-4ea7-ad6b-5c63fdd12307]    Internal error
+[MFLOG|0|2023-10-30T00:57:27.249291Z|runtime|b2eea86e-ee8f-4370-9d93-7e82af15af87]Traceback (most recent call last):
+[MFLOG|0|2023-10-30T00:57:27.249512Z|runtime|d8db655a-9b16-4279-9495-90b3c008e9c0]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-30T00:57:27.249690Z|runtime|4d3b389b-ddc2-427f-b3c6-f6b134951941]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-30T00:57:27.249859Z|runtime|80334cc8-802a-41d5-b37f-acc1d3263083]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-30T00:57:27.250027Z|runtime|6436cfec-5ec0-45a3-96e2-5aa8a02682d0]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-30T00:57:27.567839Z|runtime|55950d14-503c-4db9-9ba6-41163083806f]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-30T00:57:27.568150Z|runtime|5563bba8-43e1-4d94-a84e-ff0a5a5d68b4]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-30T00:57:27.568301Z|runtime|53d0a643-6b36-4ed2-a94a-4af317c0d2ee]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-30T00:57:27.568452Z|runtime|2be759b2-ae50-41f9-a716-6e5f48881189]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-30T00:57:27.568592Z|runtime|d9a7771a-790a-45ab-af5d-385bcb398a98]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-30T00:57:27.568729Z|runtime|a2adc869-1c38-4d8e-b820-c1f24f49b73d]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-30T00:57:27.568864Z|runtime|f7d56b4c-3c1e-4f16-8e9c-d4fbc12d3d94]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-30T00:57:27.569002Z|runtime|a17aceac-038b-4139-b1a3-3a323b9d60cf]    return callback(args, kwargs)
+[MFLOG|0|2023-10-30T00:57:27.569136Z|runtime|4dafe761-43f8-44a9-a36c-97cf24ace9ef]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-30T00:57:27.569272Z|runtime|19378518-6173-4bb8-9bcc-c7a62b06089e]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-30T00:57:27.569406Z|runtime|af2c4385-6aac-4d18-81d4-e5a7520f9f38]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-30T00:57:27.569541Z|runtime|9c2327c2-3850-4b58-9251-dddc5a5d0d11]    task.run_step(
+[MFLOG|0|2023-10-30T00:57:27.569678Z|runtime|6b06fa35-a7a6-4260-b95a-833d8673e03a]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-30T00:57:27.569812Z|runtime|47a4fd69-07c5-4542-a59f-b7dc30d983f1]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-30T00:57:27.569947Z|runtime|1f9eda6b-f2db-4ac5-8d43-a7be364ba5be]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-30T00:57:27.570089Z|runtime|13cb518e-daca-46f2-99d2-ffc6df716b7d]    step_function()
+[MFLOG|0|2023-10-30T00:57:27.570221Z|runtime|e9c56a7b-6cbb-4387-99af-830fb6cef33e]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 171, in model
+[MFLOG|0|2023-10-30T00:57:27.570353Z|runtime|b237590f-8a74-49f5-b386-57d0a5a9e837]    self.test['predMPG'] = self.regr.predict(self.test[self.col_features].fillna(self.nullval))
+[MFLOG|0|2023-10-30T00:57:27.570490Z|runtime|7ad93e23-22cb-4e38-9c7d-7cb745d7dbb5]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/ensemble/_forest.py", line 782, in predict
+[MFLOG|0|2023-10-30T00:57:27.570622Z|runtime|b8cf98fa-c14b-4096-a6ab-617e19f0ab6f]    check_is_fitted(self)
+[MFLOG|0|2023-10-30T00:57:27.570783Z|runtime|a8904892-b441-4f06-bad7-1e92599d48a3]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+[MFLOG|0|2023-10-30T00:57:27.570919Z|runtime|5d41c991-bb2b-4fe8-ab23-e717b93a0f64]    return f(args, kwargs)
+[MFLOG|0|2023-10-30T00:57:27.571051Z|runtime|b8a102bd-3c3b-4f6e-8d37-4342fd5f3024]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/utils/validation.py", line 1098, in check_is_fitted
+[MFLOG|0|2023-10-30T00:57:27.571183Z|runtime|89407f45-d294-4bb7-92c2-317a6a15385c]    raise NotFittedError(msg % {'name': type(estimator).__name__})
+[MFLOG|0|2023-10-30T00:57:27.571322Z|runtime|f3e9b954-ebbe-4410-96af-ade05ad1e0f0]sklearn.exceptions.NotFittedError: This RandomForestRegressor instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+[MFLOG|0|2023-10-30T00:57:27.571464Z|runtime|88304bf8-03a3-46b5-a814-97da1f481142]
+[MFLOG|0|2023-10-30T00:57:27.572080Z|runtime|3c55cef8-dfc5-40c5-a48d-b208e30153b7]Task failed.

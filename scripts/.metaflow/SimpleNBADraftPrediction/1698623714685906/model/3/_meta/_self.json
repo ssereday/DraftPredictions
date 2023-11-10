@@ -1,0 +1,1 @@
+{"run_number": "1698623714685906", "step_name": "model", "task_id": "3", "flow_id": "SimpleNBADraftPrediction", "user_name": "t7610", "tags": [], "system_tags": ["user:t7610", "runtime:dev", "python_version:3.9.7", "metaflow_version:2.9.13"], "ts_epoch": 1698623778931}

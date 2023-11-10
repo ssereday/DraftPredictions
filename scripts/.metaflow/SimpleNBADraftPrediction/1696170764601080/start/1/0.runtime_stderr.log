@@ -1,0 +1,38 @@
+[MFLOG|0|2023-10-01T14:33:23.640431Z|runtime|bcd37f95-2eee-4f93-bb54-43ed0e841927]<flow SimpleNBADraftPrediction step start> failed:
+[MFLOG|0|2023-10-01T14:33:23.645777Z|runtime|e32089df-8d14-4f96-810f-76de6e36c804]    Internal error
+[MFLOG|0|2023-10-01T14:33:23.646641Z|runtime|79480f77-e561-40af-a613-1a593c38b4f3]Traceback (most recent call last):
+[MFLOG|0|2023-10-01T14:33:23.646853Z|runtime|f660b44d-5969-4f6f-b634-4973f9db6859]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-01T14:33:23.647012Z|runtime|acc8cb6a-d3c8-4d6b-8c56-346273d07dbd]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-01T14:33:23.647156Z|runtime|de7d8776-325c-4b28-aed1-0e80e7956f5e]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-01T14:33:23.647298Z|runtime|92b6e8bf-4caa-4e92-8b22-108371a06b55]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-01T14:33:23.860661Z|runtime|49cad4d9-cafd-4edf-bc74-4f67a115f67d]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-01T14:33:23.860991Z|runtime|63e5da10-c9c6-4861-add7-3c3bb91ed2db]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-01T14:33:23.861165Z|runtime|6999a8b2-b86b-4fd6-a432-93ba473b6f94]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-01T14:33:23.861290Z|runtime|65fb7948-a495-414c-8600-d3ed9cd15a3b]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-01T14:33:23.861422Z|runtime|b8a5e52c-f013-4205-83aa-62a5ae0e878f]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-01T14:33:23.861536Z|runtime|35df2e1c-2ab1-4e02-b3aa-7a4764e513fe]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-01T14:33:23.861648Z|runtime|731ca306-9250-4f27-b4b8-3f473d9e77a5]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-01T14:33:23.861760Z|runtime|a33cd6e3-722a-4f83-96e7-417e01ed7cfe]    return callback(args, kwargs)
+[MFLOG|0|2023-10-01T14:33:23.861871Z|runtime|21b157db-f7c5-4db9-b7e4-f9c72612803e]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-01T14:33:23.861982Z|runtime|d1e18850-6d99-4f6c-b952-2faad3189664]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-01T14:33:23.862093Z|runtime|7aa704cf-3edc-48e9-964c-9ef3afb0a154]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-01T14:33:23.862203Z|runtime|26e9f57b-79bf-41ce-9973-c255a3e745c2]    task.run_step(
+[MFLOG|0|2023-10-01T14:33:23.862313Z|runtime|3ef06a31-eac2-497d-976d-cf6c4db79483]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-01T14:33:23.862423Z|runtime|23f6f30b-ed6b-4ea5-8762-c2239153d857]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-01T14:33:23.862533Z|runtime|f278a79b-3d1c-4db4-af2b-8a24168cd8fc]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-01T14:33:23.862643Z|runtime|97f1526d-5175-481f-b1ca-d0ec513189a5]    step_function()
+[MFLOG|0|2023-10-01T14:33:23.862752Z|runtime|f65c5677-3524-464c-9feb-cf6f29a499da]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 127, in start
+[MFLOG|0|2023-10-01T14:33:23.862862Z|runtime|7af2c374-c4e7-4f01-955e-797b988cac68]    self.cdf = import_file(nba_college_link,colname_map, collegefile, skiprows=4)
+[MFLOG|0|2023-10-01T14:33:23.862973Z|runtime|dbb9d0f1-2063-4389-bb98-52ed3d515bc2]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 46, in import_file
+[MFLOG|0|2023-10-01T14:33:23.863082Z|runtime|76ad9415-7bf1-4b22-b057-1b501ff6e2e8]    df.to_csv(outfile)
+[MFLOG|0|2023-10-01T14:33:23.863192Z|runtime|13e55850-dc47-4d45-92c2-89941465e82b]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 3466, in to_csv
+[MFLOG|0|2023-10-01T14:33:23.863303Z|runtime|620e1140-c5a4-40ba-988b-b4cbff6cdd7c]    return DataFrameRenderer(formatter).to_csv(
+[MFLOG|0|2023-10-01T14:33:23.863412Z|runtime|fc0cd9fc-164e-4678-8789-e594c1d43e59]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1105, in to_csv
+[MFLOG|0|2023-10-01T14:33:23.863521Z|runtime|6ec0657f-4889-4408-a8e7-8032fcc461fc]    csv_formatter.save()
+[MFLOG|0|2023-10-01T14:33:23.863630Z|runtime|86744215-3455-4efb-8d6b-ca1a795d59a3]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 237, in save
+[MFLOG|0|2023-10-01T14:33:23.863744Z|runtime|2928c9dd-dad5-4994-8ecf-757724426da3]    with get_handle(
+[MFLOG|0|2023-10-01T14:33:23.863854Z|runtime|78aeee36-40c8-4f12-a961-cea56bf7ab86]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/io/common.py", line 702, in get_handle
+[MFLOG|0|2023-10-01T14:33:23.863963Z|runtime|b745d0c7-3ad0-49e4-8dac-0a1849226460]    handle = open(
+[MFLOG|0|2023-10-01T14:33:23.864073Z|runtime|d010e630-d05e-4fb8-a47a-9a3eef5e89c5]FileNotFoundError: [Errno 2] No such file or directory: '../data/collegestats.csv'
+[MFLOG|0|2023-10-01T14:33:23.864186Z|runtime|3d559da2-7582-491e-91f2-e6356927d2be]
+[MFLOG|0|2023-10-01T14:33:23.864690Z|runtime|e8550418-39ba-4828-b8e3-bc68b20960a2]Task failed.

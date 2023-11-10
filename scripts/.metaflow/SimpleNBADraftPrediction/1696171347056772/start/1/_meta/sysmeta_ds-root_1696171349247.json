@@ -1,0 +1,1 @@
+{"flow_id": "SimpleNBADraftPrediction", "run_number": "1696171347056772", "step_name": "start", "task_id": "1", "field_name": "ds-root", "type": "ds-root", "value": "/TB10/Basketball/Git/draft_predictions/scripts/.metaflow", "tags": ["attempt_id:0"], "user_name": "t7610", "ts_epoch": 1696171349247}

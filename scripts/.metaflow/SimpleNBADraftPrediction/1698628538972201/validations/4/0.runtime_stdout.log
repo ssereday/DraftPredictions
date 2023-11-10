@@ -1,0 +1,161 @@
+[MFLOG|0|2023-10-30T01:16:56.225416Z|runtime|f0c6d0b0-1050-47e8-9853-fa6436ee2b99]              From            G  ...         rand      predMPG
+[MFLOG|0|2023-10-30T01:16:56.236609Z|runtime|20b08872-3763-4c06-8b35-e4699ec0953f]count  5519.000000  5519.000000  ...  5519.000000  5519.000000
+[MFLOG|0|2023-10-30T01:16:56.236807Z|runtime|7e18a402-ccd5-431e-a6b4-b934220c95e1]mean   1979.781301   234.211995  ...     0.500854    13.680816
+[MFLOG|0|2023-10-30T01:16:56.236950Z|runtime|e13176d5-78fa-4d70-a587-d9ac8a43c8fa]std      25.195449   292.171523  ...     0.287836     6.845433
+[MFLOG|0|2023-10-30T01:16:56.237091Z|runtime|38c5c4c2-c8a5-4024-af7e-d7cfbc8e1d73]min    1927.000000     1.000000  ...     0.000501     0.000000
+[MFLOG|0|2023-10-30T01:16:56.237237Z|runtime|d6b28f2d-4152-43ff-b6de-a14c3eadacd2]25%    1961.000000    24.000000  ...     0.252665    12.330215
+[MFLOG|0|2023-10-30T01:16:56.237365Z|runtime|7e3e0e4e-dc51-4574-9ea7-c2c7626b2918]50%    1979.000000    93.000000  ...     0.496284    14.994442
+[MFLOG|0|2023-10-30T01:16:56.237493Z|runtime|a1551660-d3e1-4b7b-bf35-dbd72c75df23]75%    2001.000000   354.500000  ...     0.752146    17.729495
+[MFLOG|0|2023-10-30T01:16:56.237620Z|runtime|f789ee76-d346-4e16-964a-0b6aca045816]max    2021.000000  1611.000000  ...     0.999993    39.823950
+[MFLOG|0|2023-10-30T01:16:56.237754Z|runtime|f7b2f488-f20d-4a88-bb60-93fea4c1c6c9]
+[MFLOG|0|2023-10-30T01:16:56.237882Z|runtime|9cde3362-b81e-4852-b566-59924e66f63e][8 rows x 35 columns]
+[MFLOG|0|2023-10-30T01:16:56.238013Z|runtime|6865aa9e-6ac2-49a7-b75b-a1ff7817de3a]63.44651835013882
+[MFLOG|0|2023-10-30T01:16:56.269255Z|runtime|da25d051-90df-48cb-bb47-50557eaadb9b]0.6363248927232152
+[MFLOG|0|2023-10-30T01:16:56.388683Z|runtime|73746c75-1ca3-4d6f-8116-ced51ee8d5c5]               column importance
+[MFLOG|0|2023-10-30T01:16:56.399757Z|runtime|c4ffdcb2-ca01-4ffe-9409-5cb242042044]1   yrs_since_college   0.304904
+[MFLOG|0|2023-10-30T01:16:56.399953Z|runtime|85f85d16-18b8-431f-b9b1-8c6b5d747b42]0     last_yr_college    0.29538
+[MFLOG|0|2023-10-30T01:16:56.400117Z|runtime|92af0423-aedd-41d3-b482-4db3f4cb29db]2           G_college   0.074695
+[MFLOG|0|2023-10-30T01:16:56.400270Z|runtime|b73acf29-d4f8-475b-b5a5-72b6a6a4ff86]3       MINPG_college   0.044047
+[MFLOG|0|2023-10-30T01:16:56.400420Z|runtime|3937152f-b13f-40af-b327-df9bc9d8ce2c]18      STL36_college   0.029737
+[MFLOG|0|2023-10-30T01:16:56.400567Z|runtime|c0b73f77-c725-4b4a-b7f0-eeabfa4f2c31]4         yrs_college   0.029718
+[MFLOG|0|2023-10-30T01:16:56.400716Z|runtime|18683d53-f98e-4ed5-baa2-0e2ac6290f11]16      REB36_college   0.022478
+[MFLOG|0|2023-10-30T01:16:56.400869Z|runtime|06fc2132-62fe-458b-add8-9fb34d969958]19      BLK36_college   0.021579
+[MFLOG|0|2023-10-30T01:16:56.401017Z|runtime|239ebcc7-e9aa-4880-adc9-b636ccfa8b2e]17      AST36_college   0.018997
+[MFLOG|0|2023-10-30T01:16:56.401166Z|runtime|7809b5d0-04d4-4e07-8b60-4bcd29ecd99b]6          FR_college   0.018946
+[MFLOG|0|2023-10-30T01:16:56.401313Z|runtime|be585bef-c770-474a-9943-52c978050744]21       PF36_college   0.017674
+[MFLOG|0|2023-10-30T01:16:56.401459Z|runtime|5fd66955-965d-4ead-82ce-b94dc59892f4]22      PTS36_college   0.017529
+[MFLOG|0|2023-10-30T01:16:56.401605Z|runtime|a82704ab-736d-42dd-9bf2-e7ede5e846d0]8       FGM36_college   0.015892
+[MFLOG|0|2023-10-30T01:16:56.401749Z|runtime|0e59c7ed-470d-4a8d-a277-47beaf7c5430]7         DNP_college   0.015048
+[MFLOG|0|2023-10-30T01:16:56.401896Z|runtime|cc6985ca-9a1f-4576-9b5f-5837ead9c1b7]20       TO36_college    0.01377
+[MFLOG|0|2023-10-30T01:16:56.402042Z|runtime|10dd2000-5230-46cb-bc6b-d77b0920bef8]12      FTM36_college   0.012035
+[MFLOG|0|2023-10-30T01:16:56.402186Z|runtime|2b7d2c81-fbf3-4b81-809b-2c993ce6cc4b]9       FGA36_college   0.010352
+[MFLOG|0|2023-10-30T01:16:56.402331Z|runtime|e74f95bd-8221-4564-905c-ed7f07ea9a57]13      FTA36_college   0.008617
+[MFLOG|0|2023-10-30T01:16:56.402479Z|runtime|e5f97050-6bb0-4352-9c75-a88887488a23]14      OFF36_college   0.006954
+[MFLOG|0|2023-10-30T01:16:56.402623Z|runtime|f65d679b-dba8-4201-bdeb-fa4b30dc8853]10     3FGM36_college   0.005944
+[MFLOG|0|2023-10-30T01:16:56.402804Z|runtime|d2f53b3a-3c02-4119-9a80-9eec364e16df]11     3FGA36_college   0.005613
+[MFLOG|0|2023-10-30T01:16:56.402951Z|runtime|85006020-0702-4af4-a188-b7afb004884a]15      DEF36_college   0.005216
+[MFLOG|0|2023-10-30T01:16:56.403094Z|runtime|3da2f47f-3562-4d18-8d71-a300c3abe125]5          CC_college   0.004875
+[MFLOG|0|2023-10-30T01:16:56.403242Z|runtime|efc525bd-9c9f-4f03-832c-6517f35c993f]      FirstName   LastName      MINPG    predMPG train_ind
+[MFLOG|0|2023-10-30T01:16:56.412293Z|runtime|c8d14844-b29b-4b82-b433-f2ad4c2dd6d8]4122      Oscar  Robertson  42.198077  39.823950     train
+[MFLOG|0|2023-10-30T01:16:56.412491Z|runtime|0df5b46a-5632-4dda-8445-7cc485b7960b]2041      Elvin      Hayes  38.372985  37.333557     train
+[MFLOG|0|2023-10-30T01:16:56.412652Z|runtime|46a733c6-f89f-498e-afef-18f753ee5993]1410     Julius     Erving  40.663391  37.311497     train
+[MFLOG|0|2023-10-30T01:16:56.412805Z|runtime|4a192555-72f2-4309-939c-9c7072ac7f51]1411     Julius     Erving  34.302632  37.311497      test
+[MFLOG|0|2023-10-30T01:16:56.412973Z|runtime|cc225c87-c1a7-496b-bf7f-14903e0fadc2]2289        Dan      Issel     38.884  37.188467     train
+[MFLOG|0|2023-10-30T01:16:56.413125Z|runtime|ea8a9c95-4bdb-4ecf-9a07-cae46b540b53]2290        Dan      Issel  31.116992  37.188467     valid
+[MFLOG|0|2023-10-30T01:16:56.413288Z|runtime|605323b3-8a9b-4e4f-870f-ceab69ce7269]5195      Jerry       West   39.23927  35.724553     train
+[MFLOG|0|2023-10-30T01:16:56.413436Z|runtime|5f9071eb-5850-4ab9-83d4-4ada046f3a66]2028     Connie    Hawkins  42.734043  34.255686     train
+[MFLOG|0|2023-10-30T01:16:56.413591Z|runtime|381c78ce-1071-43bd-8a11-250e7b5686b5]624   Roger Wi.      Brown  35.461157  34.255686     train
+[MFLOG|0|2023-10-30T01:16:56.413736Z|runtime|cc121d37-c286-4a85-a85d-18187f7d9f3a]2029     Connie    Hawkins  42.717949  34.255686     train
+[MFLOG|0|2023-10-30T01:16:56.413881Z|runtime|4bf31043-4fec-4295-a5db-f77a8268e8a5]2030     Connie    Hawkins  34.537074  34.255686     train
+[MFLOG|0|2023-10-30T01:16:56.414026Z|runtime|b63ad9f8-ae0e-43a8-a911-64588428c653]1676     George     Gervin  33.547408  33.234428     train
+[MFLOG|0|2023-10-30T01:16:56.414170Z|runtime|5d3bae6a-2a31-4b5b-9247-3a4f98396a3e]1675     George     Gervin  33.684015  33.234428     train
+[MFLOG|0|2023-10-30T01:16:56.414312Z|runtime|8dab98cf-3514-4c37-b260-11e5cf472604]549        Bill    Bridges  33.345572  32.637891      test
+[MFLOG|0|2023-10-30T01:16:56.414455Z|runtime|d1fad5d0-03ae-45d2-855d-ac4f14d2968e]548        Bill    Bridges  41.148148  32.637891     train
+[MFLOG|0|2023-10-30T01:16:56.414597Z|runtime|dd4dad0a-a05f-471e-b4b5-378f1efa3cd2]2617      Larry      Kenon  36.116466  32.342835     train
+[MFLOG|0|2023-10-30T01:16:56.414756Z|runtime|0cf75248-1e67-4f57-8e6f-2bf43214b57d]2618      Larry      Kenon  30.848907  32.342835     valid
+[MFLOG|0|2023-10-30T01:16:56.414898Z|runtime|3af73ee8-eeb6-4928-854e-37039de44a43]2964      Jerry      Lucas  38.758745  31.638025     train
+[MFLOG|0|2023-10-30T01:16:56.415038Z|runtime|e2928230-b0de-4300-9d9e-6f539ea4726f]2025       John   Havlicek  36.591339  30.960539     valid
+[MFLOG|0|2023-10-30T01:16:56.415179Z|runtime|c20f884e-53b6-497c-b517-01ac5945f5b6]3093      Jamal   Mashburn  37.253682  30.219690     train
+[MFLOG|0|2023-10-30T01:16:56.415321Z|runtime|81bc7278-0ad1-40fe-a5e7-38bf5d0d6916]2444   Larry D.    Johnson  36.329562  30.185720     train
+[MFLOG|0|2023-10-30T01:16:56.415460Z|runtime|8058fa9a-63dc-48c8-a7b5-92d0fbff9048]5068       John       Wall  34.911901  30.012185     train
+[MFLOG|0|2023-10-30T01:16:56.415600Z|runtime|3770ff03-3363-4bb8-b769-98b92bfe69a1]3673  Shaquille     O'Neal   34.72908  29.854731     train
+[MFLOG|0|2023-10-30T01:16:56.415741Z|runtime|b6739096-0cbd-4bb0-a3f6-77f6f9d72649]1265      Clyde    Drexler  34.564457  29.739853     train
+[MFLOG|0|2023-10-30T01:16:56.415881Z|runtime|837a6d9e-739c-44c7-9887-2ea7d05ded25]2271        Mel   Hutchins  37.926773  29.681510     train
+[MFLOG|0|2023-10-30T01:16:56.416021Z|runtime|dc2c2184-d970-47a4-a284-73261a440df6]77          Ray      Allen  35.649231  29.549859     train
+[MFLOG|0|2023-10-30T01:16:56.416161Z|runtime|cf713681-71d6-4879-8c4c-0a0c61994e43]219       Lonzo       Ball  32.488095  29.546212     train
+[MFLOG|0|2023-10-30T01:16:56.416300Z|runtime|5a7265e7-c330-45d9-a1de-050d7148e2bb]3056    Stephon    Marbury  37.696217  29.467275     train
+[MFLOG|0|2023-10-30T01:16:56.416440Z|runtime|6dfc5f01-1079-4710-90a1-e99f37bf54d5]4451        Ben    Simmons  32.905363  29.167458     train
+[MFLOG|0|2023-10-30T01:16:56.416579Z|runtime|41e60a15-947c-4b90-8538-fc24b8ae2f70]1050    Stephen      Curry  34.356009  29.106735     train
+[MFLOG|0|2023-10-30T01:16:56.416723Z|runtime|62c6b862-9ea6-4849-a61a-5d8891594043]     FirstName     LastName MINPG  predMPG train_ind
+[MFLOG|0|2023-10-30T01:16:56.421536Z|runtime|d8bc919a-bc95-470a-8e7e-9dd6f87906f3]4190     Petey    Rosenberg     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.421735Z|runtime|03d1e2fc-b38d-4614-91d7-e34ff717328c]5131      Zano         Wast     0      0.0      test
+[MFLOG|0|2023-10-30T01:16:56.421910Z|runtime|cd974a68-147b-4ac0-b66b-529e65921269]285     Virgil    Batterman     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.422046Z|runtime|8976a78c-edab-4b37-aafd-f2b124ea3507]4726    George      Swanson     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.422189Z|runtime|84f779f9-d941-4e3a-a2e9-0e6f2003cad9]4626    Joseph       Stampf     0      0.0      test
+[MFLOG|0|2023-10-30T01:16:56.422318Z|runtime|2eac9aac-95bc-4d04-b82d-3d521e8cd070]3160    Gordon       McComb     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.422456Z|runtime|ded76324-396d-4d07-904f-9f8bae3be1a3]4725    George      Swanson     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.422596Z|runtime|368c6243-050a-40c7-9fe2-d67823fca8b7]2174    Robert         Holm     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.422770Z|runtime|8561fe78-8e81-4e0e-adc5-92bab3ef1c39]2857    Seward        Leeka     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.422935Z|runtime|422e1ee2-c06b-47b5-bbd6-c1b2a8760c3e]4870       Hal      Tidrick     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.423081Z|runtime|b0ae5395-88aa-4e61-9a0f-4afbdad1862a]4303  Benjamin       Schall     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.423226Z|runtime|5a2e29bc-5180-4095-ae34-87e5dda12169]1477    George       Fields     0      0.0      test
+[MFLOG|0|2023-10-30T01:16:56.423371Z|runtime|fbded22e-64c7-4110-a484-9aa2c997ec8c]583        Bob        Brown     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.423517Z|runtime|07a3820d-8fc3-497d-b65e-c23bc5dd71d0]754        Bob    Carpenter     0      0.0     valid
+[MFLOG|0|2023-10-30T01:16:56.423663Z|runtime|0c5f4ba1-8805-4cf3-93cc-41e7390b488c]753        Bob    Carpenter     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.423808Z|runtime|a1327916-970f-4acb-9338-0ec5d47a7cfe]2272      Herb   Hutchinson     0      0.0      test
+[MFLOG|0|2023-10-30T01:16:56.423952Z|runtime|b91262ce-0032-44bd-995f-c0c59eb42ea8]5298      Dave     Williams     0      0.0     valid
+[MFLOG|0|2023-10-30T01:16:56.424096Z|runtime|862433fa-bf12-4500-97e4-94366708ff66]750     Daniel    Carnevale     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.424241Z|runtime|5a4a493b-3632-4b67-82ae-5a0f308bbd74]2338      Stub     Jacobson     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.424384Z|runtime|3cc864b2-da3c-44b4-a58f-8e89bad6909d]4871       Hal      Tidrick     0      0.0     valid
+[MFLOG|0|2023-10-30T01:16:56.424527Z|runtime|4152d8d5-ac72-4941-b8b0-adc4cffdf8c7]4045     Chick       Reiser     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.424672Z|runtime|eb75582c-161f-458c-a719-e693b3de11f9]4464       Bob         Sims     0      0.0     valid
+[MFLOG|0|2023-10-30T01:16:56.424814Z|runtime|cf92c603-ce00-4019-94a9-0b28cb2e3fe0]2746      Vito      Kubilus     0      0.0      test
+[MFLOG|0|2023-10-30T01:16:56.424972Z|runtime|48065027-89ca-4416-a81c-21494532d42d]2046       Ray        Hayes     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.425117Z|runtime|1916e5ad-9162-4dd3-aa23-44b85e33ba67]4046     Chick       Reiser     0      0.0     valid
+[MFLOG|0|2023-10-30T01:16:56.425260Z|runtime|4f92dbad-cc2b-4932-97bc-e063a61b6390]854      Ralph  Churchfield     0      0.0      test
+[MFLOG|0|2023-10-30T01:16:56.425403Z|runtime|e4fdae5d-c1e1-4f5b-9256-8dee3d8930c0]1425   Richard        Evans     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.425546Z|runtime|89d5eb39-901e-4ce7-a298-a96a9e97ab2f]3430    George        Morse     0      0.0     valid
+[MFLOG|0|2023-10-30T01:16:56.425689Z|runtime|4a07a46a-2eb0-4b65-aeba-8085a6ebc6db]4724   Everett        Swank     0      0.0      test
+[MFLOG|0|2023-10-30T01:16:56.425833Z|runtime|55960fc8-6796-4390-b1ce-f6be0c5cd6bb]4348       Joe        Scott     0      0.0     train
+[MFLOG|0|2023-10-30T01:16:56.425981Z|runtime|1077ea34-5ecd-4c88-806a-c8a2d20999ec]     FirstName      LastName      MINPG    predMPG
+[MFLOG|0|2023-10-30T01:16:56.430489Z|runtime|d2d67f4a-92df-43f8-a5f3-7acb381229d1]2290       Dan         Issel  31.116992  37.188467
+[MFLOG|0|2023-10-30T01:16:56.430697Z|runtime|6998f701-ef7f-4b9c-ba6d-019ce3b3a6c4]2618     Larry         Kenon  30.848907  32.342835
+[MFLOG|0|2023-10-30T01:16:56.430861Z|runtime|1db4ba29-79a4-4855-80a6-b2d4bd223fea]2025      John      Havlicek  36.591339  30.960539
+[MFLOG|0|2023-10-30T01:16:56.431014Z|runtime|f988acc8-eee2-40e8-857c-b870e8f6e578]336       Walt       Bellamy  37.334612  27.620198
+[MFLOG|0|2023-10-30T01:16:56.431170Z|runtime|f2e907c8-1722-4ce5-94b5-4d0f9d4f7fe5]334     Whitey          Bell  13.722222  26.626864
+[MFLOG|0|2023-10-30T01:16:56.431318Z|runtime|79a252a5-0ba3-44c1-b95b-8ec03a1bfe46]1925     Steve      Hamilton  13.341463  26.437624
+[MFLOG|0|2023-10-30T01:16:56.431466Z|runtime|562b7a8e-dbcc-43ca-94a6-8f09a7c52aea]361       Gary        Bergen   6.666667  26.092332
+[MFLOG|0|2023-10-30T01:16:56.431613Z|runtime|b2cafcda-49ae-4728-9329-633b2aedc40e]2292     Allen       Iverson   41.12035  26.049446
+[MFLOG|0|2023-10-30T01:16:56.431760Z|runtime|da0f1de5-aa44-4666-8e43-feee46046d54]2801      York        Larese  11.915254  26.049366
+[MFLOG|0|2023-10-30T01:16:56.431905Z|runtime|283bd8dd-6ed6-462d-b8e6-14bf581e72aa]1883     Cliff         Hagan  29.169128  26.009380
+[MFLOG|0|2023-10-30T01:16:56.432051Z|runtime|762e38d6-2c3f-46ec-a525-d07ee32803b0]5266       Win       Wilfong  17.947761  25.799012
+[MFLOG|0|2023-10-30T01:16:56.432195Z|runtime|dfbef1ac-ecdb-4a12-bc85-4ecbdd2bde5c]1426    Tyreke         Evans  30.710438  25.351303
+[MFLOG|0|2023-10-30T01:16:56.432339Z|runtime|e153defd-b2ba-426a-a6e7-b963d7e61251]4499    Marcus         Smart  30.018933  24.486611
+[MFLOG|0|2023-10-30T01:16:56.432485Z|runtime|57bb1736-340e-4060-af5a-a65efaf53cde]5161     Chris        Webber  37.120337  24.467035
+[MFLOG|0|2023-10-30T01:16:56.432631Z|runtime|76fb567b-4b8e-4f26-87e3-548001902e81]2950     Kevin      Loughery   29.41457  24.424044
+[MFLOG|0|2023-10-30T01:16:56.432775Z|runtime|171731af-596d-4b3b-bff3-57725e5b494c]5153  Clarence  Weatherspoon  30.312568  23.924042
+[MFLOG|0|2023-10-30T01:16:56.432919Z|runtime|a65cd367-0cea-4a11-9717-4515cb88ba6e]2632     Jason          Kidd  36.025162  23.836875
+[MFLOG|0|2023-10-30T01:16:56.433064Z|runtime|04d1610b-a2f4-4d70-8eb7-dbcaeaf21c39]4692     Roger    Strickland          4  23.655090
+[MFLOG|0|2023-10-30T01:16:56.433209Z|runtime|05cf30d2-e33c-449d-a3c1-82ab944added]4178      Phil       Rollins  15.491525  23.330221
+[MFLOG|0|2023-10-30T01:16:56.433352Z|runtime|608c5e00-7fc0-488d-ad2f-0353edcf199d]1195     Clyde        Dickey   8.137931  23.290251
+[MFLOG|0|2023-10-30T01:16:56.433496Z|runtime|4184c50d-3da9-49d9-9957-fd74d134ddf1]2483     Bobby         Jones  33.239521  23.150634
+[MFLOG|0|2023-10-30T01:16:56.433640Z|runtime|3fb1acbc-1486-47dc-8806-1bd9b00dc651]523    Terrell       Brandon  29.758287  23.126492
+[MFLOG|0|2023-10-30T01:16:56.433786Z|runtime|708dcadc-3ddc-45e5-856a-dd4269dcd08c]1275      Dick       Duckett  12.470588  23.038625
+[MFLOG|0|2023-10-30T01:16:56.433931Z|runtime|886f4047-ab6a-450d-b1ce-05e5cee8afd4]807       Wilt   Chamberlain  45.798086  23.001494
+[MFLOG|0|2023-10-30T01:16:56.434075Z|runtime|fd5d3639-7500-4553-89a0-c67b45f813c6]1731      Drew        Gooden  25.477215  22.928595
+[MFLOG|0|2023-10-30T01:16:56.434220Z|runtime|6b5f12ad-0757-49e7-b73f-8d87586fd8bf]1289   Richard         Dumas  21.823529  22.927276
+[MFLOG|0|2023-10-30T01:16:56.434364Z|runtime|2678f8bd-86a6-479d-9b3c-13d302a87be7]154    Brandon     Armstrong   6.472222  22.914092
+[MFLOG|0|2023-10-30T01:16:56.434510Z|runtime|c6eaac16-1c4d-432a-82bf-cd7a0cb80378]4233    Kareem          Rush  17.213873  22.912780
+[MFLOG|0|2023-10-30T01:16:56.434653Z|runtime|2e90a7c1-7dd4-4f1f-b4bf-3cd2521d2811]5123       Jim    Washington  29.286822  22.906644
+[MFLOG|0|2023-10-30T01:16:56.434820Z|runtime|2360341e-7a53-4d90-ae3d-4a7381a3d418]6      Shareef   Abdur-Rahim   34.79759  22.875763
+[MFLOG|0|2023-10-30T01:16:56.434970Z|runtime|555bcd13-12a2-4a56-9c0a-cdf20b544b0c]     FirstName   LastName     MINPG   predMPG
+[MFLOG|0|2023-10-30T01:16:56.940288Z|runtime|51b3965b-588d-4a42-9a31-f2224ae12bd6]1282    Robert      Duffy         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.940742Z|runtime|b45b2258-c2ed-4361-8c9b-52cee0c1d286]4709    Robert   Sullivan         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.941115Z|runtime|3900e0a5-92e6-40fc-a3be-72f4424734aa]1497     Jerry  Fleishman  3.366412  0.000052
+[MFLOG|0|2023-10-30T01:16:56.941474Z|runtime|a4c1be2a-a35d-4048-9c1e-851219e5fe9a]4685       Ted     Strain         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.941824Z|runtime|bf8002c8-938b-4fbd-ad3c-6099d72bd93c]1617      Fred      Gantt         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.942172Z|runtime|ac7a1335-8e15-4ad9-a857-cd1e1731ca39]721        Tom   Callahan         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.942520Z|runtime|ab64d34f-e12c-4901-8bff-359787af0dc5]3592      Stan     Noszka         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.942816Z|runtime|4c9ec6fa-8ad0-4505-b26a-939f81726232]4522    Don E.      Smith         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.942960Z|runtime|8d582225-e71c-4af2-a850-1d8b8bf055b4]443     Robert    Bolyard         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.943261Z|runtime|5bc15c47-071f-4491-b7e3-9c43acdb7188]602     Harold      Brown         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.943589Z|runtime|4634d07a-d748-4d96-9b18-bb3178cfbb21]2100      Jack     Hewson         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.943920Z|runtime|bf62b83b-95fa-4df0-a0b3-bde997d48f9e]5036     Clint      Wager         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.944249Z|runtime|c0d3b47d-453e-46b4-b03b-ee4549426560]4500     Belus    Smawley  0.532567  0.000052
+[MFLOG|0|2023-10-30T01:16:56.944578Z|runtime|2927229b-9f48-4e44-8429-b4e264f75caa]2141       Pat      Hintz         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.944908Z|runtime|618e05d3-3dbd-4ba9-9933-7b739db3dcae]2354      John    Janisch         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.945239Z|runtime|c0fbb6c3-47af-4b99-84d1-4d7b5359bf7b]4590      Gino     Sovran         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.945567Z|runtime|9f305a71-c443-46d4-99aa-8d6ab0cbd513]4438    Victor     Siegel         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.945894Z|runtime|099d961d-b535-4597-a650-4aaf8f98880b]4413       Bob       Shea         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.946224Z|runtime|69d1e480-d01e-4c8e-ac79-0e33cebf4763]4378    Rollie      Seltz         0  0.000052
+[MFLOG|0|2023-10-30T01:16:56.946555Z|runtime|a950e6b1-65a6-4069-8975-39eb99313a8a]4046     Chick     Reiser         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.946821Z|runtime|b6e0391f-725f-4a8d-92e1-513d219a9733]3430    George      Morse         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.946941Z|runtime|5dd83cac-1726-4043-a4c8-59df1d92a58f]5298      Dave   Williams         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.947180Z|runtime|72179f0a-ae71-45c3-811f-2b8ad21c6305]3685      John        Orr         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.947453Z|runtime|3b1b607d-279f-4590-aada-fae999e62dae]4464       Bob       Sims         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.947724Z|runtime|ddae73f3-f289-457f-8e04-fe401150cf72]4871       Hal    Tidrick         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.947996Z|runtime|1a4fd3b1-d116-44b1-9442-c7e23d9b146c]1433       Joe      Fabel         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.948267Z|runtime|326248e0-f961-4d18-9379-29fc44b3b1aa]1447      Bill     Farrow         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.948538Z|runtime|a27b3ec5-17ec-4e28-88e8-4ca1005aee78]754        Bob  Carpenter         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.948808Z|runtime|9f9edda3-8274-4fb7-883a-c60184fa886c]4336      Dick     Schulz         0  0.000000
+[MFLOG|0|2023-10-30T01:16:56.949084Z|runtime|777e6c28-f830-4299-b5ec-5ea99486e191]4335      Dick     Schulz         0  0.000000

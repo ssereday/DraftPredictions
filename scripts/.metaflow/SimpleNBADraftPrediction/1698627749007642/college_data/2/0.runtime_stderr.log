@@ -1,0 +1,45 @@
+[MFLOG|0|2023-10-30T01:02:34.026449Z|runtime|1d486034-5fed-4268-868d-66e5e2dbee41]<flow SimpleNBADraftPrediction step college_data> failed:
+[MFLOG|0|2023-10-30T01:02:34.066774Z|runtime|ae18070f-4775-4a03-abf1-93856d4e5a43]    Internal error
+[MFLOG|0|2023-10-30T01:02:34.068122Z|runtime|afff7440-ac97-4208-a5ae-d81dffaea469]Traceback (most recent call last):
+[MFLOG|0|2023-10-30T01:02:34.068375Z|runtime|ae71ae66-e2e7-4121-98e5-3d398a049681]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3361, in get_loc
+[MFLOG|0|2023-10-30T01:02:34.068555Z|runtime|b2e9ae0e-fb7f-40e2-8af1-456084cdd8f6]    return self._engine.get_loc(casted_key)
+[MFLOG|0|2023-10-30T01:02:34.068719Z|runtime|ff5226b3-43d8-4887-b26d-d679de4be507]  File "pandas/_libs/index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+[MFLOG|0|2023-10-30T01:02:34.068906Z|runtime|836a7e1b-c92b-4305-bd71-fd45c0d0e635]  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+[MFLOG|0|2023-10-30T01:02:34.069066Z|runtime|4074ab40-189b-455b-a1a6-9fcd7077070e]  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+[MFLOG|0|2023-10-30T01:02:34.069224Z|runtime|42ee7e17-46de-47e4-9bcc-6d5d808475a1]  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+[MFLOG|0|2023-10-30T01:02:34.069380Z|runtime|9054c6ba-776e-43b0-8897-cb3e7a19cf89]KeyError: 'Season'
+[MFLOG|0|2023-10-30T01:02:34.069543Z|runtime|a0b7f688-61c2-4c10-ae43-ae42fad057d5]
+[MFLOG|0|2023-10-30T01:02:34.069700Z|runtime|a586ce0e-28b0-4db9-be37-8f74ac692e60]The above exception was the direct cause of the following exception:
+[MFLOG|0|2023-10-30T01:02:34.069855Z|runtime|05719b9a-9fea-423f-9f59-491ba3ed6881]
+[MFLOG|0|2023-10-30T01:02:34.070017Z|runtime|8b6aea2e-3837-49a5-89d5-eea8590e5c03]Traceback (most recent call last):
+[MFLOG|0|2023-10-30T01:02:34.070171Z|runtime|599533b8-40fa-4b8e-bb51-ed55796aaf27]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-30T01:02:34.070326Z|runtime|2cd14823-01ca-4ebd-8ce5-209fab227643]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-30T01:02:34.070480Z|runtime|8e43f792-d298-4c2b-9e42-13c68ddb5001]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-30T01:02:34.070639Z|runtime|5766ff0c-164e-43c8-b593-696fb950a325]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-30T01:02:34.479794Z|runtime|091331fb-7248-4d6e-9073-4e050b7873cd]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-30T01:02:34.480142Z|runtime|f601be7a-be69-4299-84f2-bf7d8db65c11]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-30T01:02:34.480291Z|runtime|2707a4fa-6ad0-4474-a75e-4f905e779fa0]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-30T01:02:34.480432Z|runtime|ce68e5eb-18b4-4de1-b0bb-d04d4a7a04bd]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-30T01:02:34.480570Z|runtime|4d988715-79f4-4a76-bb28-102ce48f0384]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-30T01:02:34.480707Z|runtime|6dc2d1fc-6765-4566-b150-96796a253a70]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-30T01:02:34.480841Z|runtime|b6b2252a-f6aa-456b-8635-b748b9358797]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-30T01:02:34.480974Z|runtime|45622b43-fd13-42d4-a32c-a1064630024c]    return callback(args, kwargs)
+[MFLOG|0|2023-10-30T01:02:34.481109Z|runtime|945e3113-ffe0-4f90-8150-f2533c69d9a4]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-30T01:02:34.481242Z|runtime|da82332d-c1e6-4531-9700-b5461a4c8693]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-30T01:02:34.481374Z|runtime|2bdf84d6-f2e3-4e9c-ae51-685993228223]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-30T01:02:34.481508Z|runtime|27fa9676-1029-4202-a97c-3e95d97d0f6f]    task.run_step(
+[MFLOG|0|2023-10-30T01:02:34.481641Z|runtime|c5e4f325-43e2-40d7-be0d-5608beaf9efe]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-30T01:02:34.481773Z|runtime|decd3c33-a1b5-4931-8f0b-618ee06bcbd0]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-30T01:02:34.481906Z|runtime|4231afa0-8168-43c3-8381-cc2729385600]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-30T01:02:34.482038Z|runtime|0b267349-676d-48b1-b4d7-615ebc7f6502]    step_function()
+[MFLOG|0|2023-10-30T01:02:34.482171Z|runtime|6b4348d1-dd6e-47cf-9a8b-7d6bcac572dd]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 127, in college_data
+[MFLOG|0|2023-10-30T01:02:34.482304Z|runtime|bcc228a3-c43f-4b7c-8eaf-b97efba94717]    self.cdf = clean_yr(self.cdf, SeasonFields=['Season'])
+[MFLOG|0|2023-10-30T01:02:34.482435Z|runtime|ec4cdb5f-cf32-4976-9a2e-7a379ee70dbb]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 51, in clean_yr
+[MFLOG|0|2023-10-30T01:02:34.482567Z|runtime|a73ddf84-b3fb-4542-b633-fe05b71d6f0e]    df[s] = season_int(df[s])
+[MFLOG|0|2023-10-30T01:02:34.482720Z|runtime|618c901e-fb3b-46b3-8b4d-2426d5ace6b8]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3458, in __getitem__
+[MFLOG|0|2023-10-30T01:02:34.482856Z|runtime|2d7ff5e4-9455-4333-bfe3-5eab457ee256]    indexer = self.columns.get_loc(key)
+[MFLOG|0|2023-10-30T01:02:34.482991Z|runtime|95864f13-3fbd-4824-abeb-ab590aaae0c2]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3363, in get_loc
+[MFLOG|0|2023-10-30T01:02:34.483122Z|runtime|0c162695-94fe-435a-8ffd-cb3821c6ee9d]    raise KeyError(key) from err
+[MFLOG|0|2023-10-30T01:02:34.483254Z|runtime|9498b0f1-ced1-4085-a43d-ed2b068b223f]KeyError: 'Season'
+[MFLOG|0|2023-10-30T01:02:34.483394Z|runtime|a4e6456d-ac0d-4ade-81f3-85c3c12eca67]
+[MFLOG|0|2023-10-30T01:02:34.484039Z|runtime|86601e89-a13e-4e41-b808-c4efec90fa1d]Task failed.

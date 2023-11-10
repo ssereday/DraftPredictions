@@ -1,0 +1,32 @@
+[MFLOG|0|2023-10-29T23:56:21.677913Z|runtime|59887f76-effd-490d-92a1-c79860a2fabc]<flow SimpleNBADraftPrediction step model> failed:
+[MFLOG|0|2023-10-29T23:56:22.008389Z|runtime|33aeb8f6-bd52-4a25-b7c6-25efd6b0e848]    Internal error
+[MFLOG|0|2023-10-29T23:56:22.009298Z|runtime|8407949e-5fa4-4b0e-ae9f-1e237b10075a]Traceback (most recent call last):
+[MFLOG|0|2023-10-29T23:56:22.009516Z|runtime|b5aaa7f3-c571-4df3-b5fa-ef81e9454871]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-29T23:56:22.009697Z|runtime|a5f252e7-687e-4d82-9de1-eeac42f1ece6]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-29T23:56:22.009864Z|runtime|312b3d29-d883-4bdf-8841-fde526ff817e]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-29T23:56:22.010033Z|runtime|24bb58dd-0f5e-4499-896e-7c1842ced660]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-29T23:56:22.308366Z|runtime|622c541c-85aa-4fa3-8c71-ffc50ee8e7ee]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-29T23:56:22.308828Z|runtime|00663647-453d-408d-845e-69798815a2d3]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-29T23:56:22.309115Z|runtime|a3f81405-d571-40bc-86b3-157661ca9a48]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-29T23:56:22.309388Z|runtime|807973a0-5718-4efe-ad34-d98e4355725e]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-29T23:56:22.309652Z|runtime|3618ce41-b4ba-4ca6-8b48-69f2a93a6040]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-29T23:56:22.309913Z|runtime|aa87dfa3-b27b-4aa9-a668-7e07e93f2c59]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-29T23:56:22.310172Z|runtime|3f928848-c2a1-4570-a568-543d0a44832a]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-29T23:56:22.310457Z|runtime|be50a71f-5d2a-439a-aa8d-683932ebc48b]    return callback(args, kwargs)
+[MFLOG|0|2023-10-29T23:56:22.310770Z|runtime|8ec2b090-e9bf-4354-b754-d4fcb668ed13]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-29T23:56:22.310909Z|runtime|349c2327-1498-4da3-9c71-7267cf94c158]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-29T23:56:22.311186Z|runtime|cfaf4c09-e8fa-4870-ad3e-ed2b110ead79]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-29T23:56:22.311464Z|runtime|8071eccd-871b-436e-9cdf-e48ca6df2855]    task.run_step(
+[MFLOG|0|2023-10-29T23:56:22.311744Z|runtime|223ee11b-bc75-4c29-9df4-e1b563975c44]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-29T23:56:22.312023Z|runtime|6b9f3262-3fcc-4d3b-b3f8-982ff859dc1e]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-29T23:56:22.312302Z|runtime|d973c9c0-9c68-4e03-9317-72e84a520396]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-29T23:56:22.312576Z|runtime|be0dd5b1-ac1a-4784-9715-a3dbb7f18c6c]    step_function()
+[MFLOG|0|2023-10-29T23:56:22.312831Z|runtime|a696fb73-5e2b-4416-8fe0-614c42fa27a4]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 170, in model
+[MFLOG|0|2023-10-29T23:56:22.313086Z|runtime|06743f12-408b-4e21-b077-4b52f5d1409e]    regr.fit(self.train[self.col_features].fillna(self.nullval), self.train['MINPG'])
+[MFLOG|0|2023-10-29T23:56:22.313356Z|runtime|a3d935fc-57fd-419b-971f-4149782fd63c]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/sklearn/ensemble/_forest.py", line 334, in fit
+[MFLOG|0|2023-10-29T23:56:22.313512Z|runtime|d420bc55-497a-46e0-a0f2-003515adc6ab]    y = np.ascontiguousarray(y, dtype=DOUBLE)
+[MFLOG|0|2023-10-29T23:56:22.313707Z|runtime|b3fe0616-ecb5-4bdd-bde5-0182f05f33cb]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/numpy/core/_asarray.py", line 228, in ascontiguousarray
+[MFLOG|0|2023-10-29T23:56:22.313964Z|runtime|3b01bc2f-5a81-4c6b-98eb-afaecaf3fe48]    return array(a, dtype, copy=False, order='C', ndmin=1)
+[MFLOG|0|2023-10-29T23:56:22.314219Z|runtime|8b60374e-d4d7-454d-9f56-ad7bd0df2afd]ValueError: could not convert string to float: '---'
+[MFLOG|0|2023-10-29T23:56:22.314483Z|runtime|9fdeb1b6-a724-4c98-b17f-5707ce7db9ea]
+[MFLOG|0|2023-10-29T23:56:22.319355Z|runtime|ec5e515a-4242-42c4-97d6-f884458454e1]Task failed.

@@ -1,0 +1,34 @@
+[MFLOG|0|2023-10-29T23:47:52.900247Z|runtime|046b16be-0410-4fcf-a0f9-6b13698d9c9f]<flow SimpleNBADraftPrediction step model> failed:
+[MFLOG|0|2023-10-29T23:47:53.249458Z|runtime|b9f79329-db01-44cf-917f-898d5cf77bc0]    Internal error
+[MFLOG|0|2023-10-29T23:47:53.250472Z|runtime|12a68fc6-48f7-43a7-b922-fd0c7dec25a9]Traceback (most recent call last):
+[MFLOG|0|2023-10-29T23:47:53.250706Z|runtime|649b7613-03f3-4825-9f02-e4bc77b9645e]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-29T23:47:53.250887Z|runtime|bbf00c29-85e7-48d4-a35b-8265e1e7ba4b]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-29T23:47:53.251054Z|runtime|e1dae97e-999b-457b-a1c8-391efadaa322]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-29T23:47:53.251223Z|runtime|cf6176e2-ba56-49d5-a278-a640e11ebd9b]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-29T23:47:53.563639Z|runtime|9e24eb98-d891-4de3-a51e-0a46c9f17a9e]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-29T23:47:53.564141Z|runtime|f41e1086-37fc-43d9-b1f6-01330d2f95e5]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-29T23:47:53.564429Z|runtime|0845cc8e-7cee-4aa2-88b9-092d66f490ef]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-29T23:47:53.564705Z|runtime|fbc82cb4-c60f-4f5a-9711-b5ba7b313a0a]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-29T23:47:53.564970Z|runtime|114cb646-8fa8-4243-8a01-717898bd1429]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-29T23:47:53.565230Z|runtime|f931a07e-659c-4619-8ca6-08e377621691]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-29T23:47:53.565489Z|runtime|702ed3cc-357f-4194-b8c8-47dc634b5589]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-29T23:47:53.565793Z|runtime|bb89f39f-aa49-452c-b425-9474a0b83e1c]    return callback(args, kwargs)
+[MFLOG|0|2023-10-29T23:47:53.566072Z|runtime|a0486f77-c0e7-48e3-87e5-2874f67bf5d7]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-29T23:47:53.566352Z|runtime|f602b4d3-7b4f-4589-994f-67aa6e36dc74]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-29T23:47:53.566628Z|runtime|a741ec73-2186-4a13-93e5-fd682f0e74ff]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-29T23:47:53.566835Z|runtime|e492dc44-8bf9-4b30-a5a9-83b176bfce08]    task.run_step(
+[MFLOG|0|2023-10-29T23:47:53.567015Z|runtime|ab65ef5f-91a2-45c0-9fdc-e142643629d6]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-29T23:47:53.567275Z|runtime|746216a8-beaf-4722-a2db-624b3eaf7b64]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-29T23:47:53.567529Z|runtime|513afc20-b232-49ac-8a22-e6cf5740efd6]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-29T23:47:53.567794Z|runtime|f70c0107-0fd7-444a-90aa-4d462432bb8c]    step_function()
+[MFLOG|0|2023-10-29T23:47:53.568048Z|runtime|bcdf98ab-6547-43bb-992e-427c80cf5e7b]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 171, in model
+[MFLOG|0|2023-10-29T23:47:53.568320Z|runtime|21f230e8-3365-41b8-bacf-f641b731016a]    regr.fit(self.train[self.col_features].fillna(self.nullval), self.train['MINPG'])
+[MFLOG|0|2023-10-29T23:47:53.568601Z|runtime|4be1e040-bd3a-4d49-8e99-e353561d09a4]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3464, in __getitem__
+[MFLOG|0|2023-10-29T23:47:53.568889Z|runtime|3df615f1-e402-438f-b93a-b5203811b8b2]    indexer = self.loc._get_listlike_indexer(key, axis=1)[1]
+[MFLOG|0|2023-10-29T23:47:53.569166Z|runtime|00d8822b-2171-4916-b7e5-8f34fa4e7b19]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/indexing.py", line 1314, in _get_listlike_indexer
+[MFLOG|0|2023-10-29T23:47:53.569422Z|runtime|138d6899-e483-4011-85d4-d0bbdf980706]    self._validate_read_indexer(keyarr, indexer, axis)
+[MFLOG|0|2023-10-29T23:47:53.569674Z|runtime|64b7bddb-f280-40f2-878e-082679dc18ab]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/indexing.py", line 1377, in _validate_read_indexer
+[MFLOG|0|2023-10-29T23:47:53.569958Z|runtime|61eefb3a-c59f-42b2-8730-d98de3f30343]    raise KeyError(f"{not_found} not in index")
+[MFLOG|0|2023-10-29T23:47:53.570234Z|runtime|7aaa5344-7bb0-4813-a2d0-e5506b82a00f]KeyError: "['last_yr_college', 'yrs_since_college', 'yrs_college', 'CC_college', 'FR_college', 'DNP_college'] not in index"
+[MFLOG|0|2023-10-29T23:47:53.570516Z|runtime|60d59dbf-f458-4070-9cd6-035d88ba30bd]
+[MFLOG|0|2023-10-29T23:47:53.576563Z|runtime|690cf52c-8bee-4cf0-9304-b8544c23c460]Task failed.

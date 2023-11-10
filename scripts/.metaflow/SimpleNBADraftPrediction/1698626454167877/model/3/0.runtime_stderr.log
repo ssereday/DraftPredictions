@@ -1,0 +1,30 @@
+[MFLOG|0|2023-10-30T00:41:00.970135Z|runtime|21518886-85a5-4c1c-bc14-3a9cc3bb0ad6]<flow SimpleNBADraftPrediction step model> failed:
+[MFLOG|0|2023-10-30T00:41:01.282538Z|runtime|86cf9485-d5ac-46c5-b4da-86fc98d81fdd]    Internal error
+[MFLOG|0|2023-10-30T00:41:01.283502Z|runtime|4ac4632a-b476-4f94-a500-d37ded1bbab9]Traceback (most recent call last):
+[MFLOG|0|2023-10-30T00:41:01.283723Z|runtime|8f6d2e41-5426-4be8-9466-93fc6ca458b4]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-30T00:41:01.283902Z|runtime|81f30823-1791-4a46-9a58-ede425e2460a]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-30T00:41:01.284071Z|runtime|a6021de5-bd88-48ca-9166-0fd110482fa9]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-30T00:41:01.284242Z|runtime|fda8afa8-be0e-4f87-93da-5f8476de49fb]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-30T00:41:01.528740Z|runtime|8407b733-d3d4-48c3-a3ed-60679d1b9b35]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-30T00:41:01.529288Z|runtime|94fc7037-e356-4ef4-ba9e-12f820aaff64]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-30T00:41:01.529580Z|runtime|ac0adb99-a7c6-4a49-90d7-63027dc1b4a8]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-30T00:41:01.529851Z|runtime|f7d8c303-9e11-449f-8bbf-23b90ffbab2e]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-30T00:41:01.530114Z|runtime|68784dc5-12c2-47f4-8f91-202b88db33bd]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-30T00:41:01.530375Z|runtime|1ba5c41f-4fff-46ec-b086-d09b28f8e98e]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-30T00:41:01.530643Z|runtime|adbdab7a-ac74-4c33-b461-6d47e3af291a]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-30T00:41:01.530856Z|runtime|1ff90630-8d4e-44d6-b7fb-0eac287c9e2a]    return callback(args, kwargs)
+[MFLOG|0|2023-10-30T00:41:01.531031Z|runtime|822b8a54-4e78-4e47-b464-0abe04034b7d]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-30T00:41:01.531289Z|runtime|273ad9df-119e-44f9-9b51-ad824f707aa4]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-30T00:41:01.531543Z|runtime|f19d4da0-6523-4f2c-92a6-29fed9c7ef3c]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-30T00:41:01.531801Z|runtime|3dacb661-62bf-48ea-b856-a5de557b5eff]    task.run_step(
+[MFLOG|0|2023-10-30T00:41:01.532056Z|runtime|8c15c8e8-8048-4f49-b334-c8a98997a419]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-30T00:41:01.532320Z|runtime|5ef36e8c-87bb-47ce-b04c-c2139d63578c]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-30T00:41:01.532577Z|runtime|6eab9cf4-46c0-4a3b-a4bb-df310525a8d0]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-30T00:41:01.532848Z|runtime|15bba0d4-ff83-40e3-b432-b1d0e8d959a8]    step_function()
+[MFLOG|0|2023-10-30T00:41:01.533103Z|runtime|a41ace97-7f55-40da-8329-aa81072c32a9]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 161, in model
+[MFLOG|0|2023-10-30T00:41:01.533358Z|runtime|00fcd591-d702-4e87-b1a1-7bc8655b9dd4]    self.train = self.train[self.col_features].fillna(self.nullval)
+[MFLOG|0|2023-10-30T00:41:01.533617Z|runtime|4d69504b-4f89-4e49-8597-f817b5a8a8fc]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/flowspec.py", line 229, in __getattr__
+[MFLOG|0|2023-10-30T00:41:01.533871Z|runtime|30cc566c-30c6-468e-a635-c8b306df264e]    raise AttributeError("Flow %s has no attribute '%s'" % (self.name, name))
+[MFLOG|0|2023-10-30T00:41:01.534125Z|runtime|33e8ca02-85d5-4c30-ae0b-0e6fea185c04]AttributeError: Flow SimpleNBADraftPrediction has no attribute 'col_features'
+[MFLOG|0|2023-10-30T00:41:01.534397Z|runtime|f1e62776-6fbb-49d6-a2dd-d21736a8f7fc]
+[MFLOG|0|2023-10-30T00:41:01.535236Z|runtime|3fc2803d-d84d-4399-a13b-643292ecafed]Task failed.

@@ -1,0 +1,13 @@
+[MFLOG|0|2023-10-29T23:45:59.418074Z|runtime|e8d60d91-aff3-4425-a679-1cabc4db9abb]Index(['League', 'FirstName', 'LastName', 'Pos.', 'Type', 'From', 'To', 'G',
+[MFLOG|0|2023-10-29T23:46:00.025857Z|runtime|ca3b003b-9c21-4045-bfa0-9cd8769d882d]       'GS', 'MIN', 'FGM', 'FGA', '3FGM', '3FGA', 'FTM', 'FTA', 'OFF', 'DEF',
+[MFLOG|0|2023-10-29T23:46:00.026205Z|runtime|6142be3e-b858-46af-a4a8-a0292ef104b7]       'REB', 'AST', 'STL', 'BLK', 'TO', 'PF', 'PTS', 'Unnamed: 28', 'GPG',
+[MFLOG|0|2023-10-29T23:46:00.026403Z|runtime|5b994b0c-5a3b-4f19-9ee4-5983ee1ae7d6]       'GSPG', 'MINPG', 'FGMPG', 'FGAPG', '3FGMPG', '3FGAPG', 'FTMPG', 'FTAPG',
+[MFLOG|0|2023-10-29T23:46:00.026616Z|runtime|2321ebb8-e99f-47a3-9b8a-47858995bcbb]       'OFFPG', 'DEFPG', 'REBPG', 'ASTPG', 'STLPG', 'BLKPG', 'TOPG', 'PFPG',
+[MFLOG|0|2023-10-29T23:46:00.026844Z|runtime|b02488a4-11b9-4d55-811d-0e21e6f1ff21]       'PTSPG'],
+[MFLOG|0|2023-10-29T23:46:00.027042Z|runtime|64fda609-5a1c-4cc0-a9cd-e9fa31577c16]      dtype='object')
+[MFLOG|0|2023-10-29T23:46:00.027243Z|runtime|cd27f81b-b806-4d9e-b1a1-be73e6244b20]['last_yr_college', 'yrs_since_college', 'yrs_college', 'CC_college', 'FR_college', 'DNP_college']
+[MFLOG|0|2023-10-29T23:46:00.665628Z|runtime|9f568948-7897-410b-b55c-c9d0fd340692]plyryrs.columns
+[MFLOG|0|2023-10-29T23:46:00.665993Z|runtime|fbd722cc-2aa9-413f-88b9-a209267c95a4]Index(['FirstName', 'LastName', 'yrs_college', 'first_yr_college',
+[MFLOG|0|2023-10-29T23:46:00.666292Z|runtime|be76041c-ca05-4551-9218-2290c47c534f]       'last_yr_college', 'last_college', 'notes_college', 'CC_college',
+[MFLOG|0|2023-10-29T23:46:00.666556Z|runtime|3036c0eb-e020-4191-b0b8-fcf8156ba6b6]       'FR_college', 'DNP_college'],
+[MFLOG|0|2023-10-29T23:46:00.666837Z|runtime|9da05f63-d026-402e-8e44-0f0dd4de223d]      dtype='object')

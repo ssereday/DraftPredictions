@@ -1,0 +1,28 @@
+[MFLOG|0|2023-10-01T14:40:45.211498Z|runtime|d160c511-9bad-40dc-ae35-da0dbe6b9d9c]<flow SimpleNBADraftPrediction step start> failed:
+[MFLOG|0|2023-10-01T14:40:45.441517Z|runtime|fb4c7d01-52e5-43c9-bfba-ff70451c0988]    Internal error
+[MFLOG|0|2023-10-01T14:40:45.442415Z|runtime|15509d62-ea0e-44f3-8ceb-bd9519ef7d7d]Traceback (most recent call last):
+[MFLOG|0|2023-10-01T14:40:45.442658Z|runtime|f4d3c64c-4de6-4f15-9f73-92b508f95dff]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-01T14:40:45.442862Z|runtime|0d99ce0a-fc70-49f9-86b0-9988c28dcf63]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-01T14:40:45.443060Z|runtime|294c11c8-9890-4b0a-ad07-5ef579ab4b77]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-01T14:40:45.443262Z|runtime|1625f328-a595-4bba-8de3-1fa4549d8f0b]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-01T14:40:45.714698Z|runtime|6d2a2d46-bc67-4094-b392-692c70bbd27a]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-01T14:40:45.715077Z|runtime|408341cc-04ad-4d69-b135-273bbb8e452b]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-01T14:40:45.715257Z|runtime|2d9c8e1f-c695-4464-8e2f-971716270542]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-01T14:40:45.715423Z|runtime|63f6bd48-5319-42ee-a4a6-5e331ac87457]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-01T14:40:45.715583Z|runtime|170fc33c-5d00-4d49-bf2a-9ce9185591c9]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-01T14:40:45.715743Z|runtime|e5cf1714-a0d3-41c5-b506-ba1682369719]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-01T14:40:45.715899Z|runtime|e6328a13-d059-4249-9e6b-e9f2dea82ee1]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-01T14:40:45.716057Z|runtime|e841e93a-1953-4559-9b62-ca5f8c9522e6]    return callback(args, kwargs)
+[MFLOG|0|2023-10-01T14:40:45.716214Z|runtime|942dbddd-84c7-4d5c-ba48-c0facb6e53e9]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-01T14:40:45.716369Z|runtime|a46fe791-6cb4-48d8-abab-3bc5c1b7f08c]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-01T14:40:45.716525Z|runtime|750551ca-a18b-4ca4-97f9-9d5a72b8cc00]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-01T14:40:45.716680Z|runtime|767213bd-062e-4dcd-843d-218abaecf009]    task.run_step(
+[MFLOG|0|2023-10-01T14:40:45.716839Z|runtime|b08bdde7-f1cf-4569-bc51-a6369f2c80b8]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-01T14:40:45.716994Z|runtime|97d2e836-ca03-41cd-b81e-e8fb050a43cc]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-01T14:40:45.723279Z|runtime|eb497f63-899b-4278-aaec-72f3bd373de5]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-01T14:40:45.723610Z|runtime|bd401772-02b9-423f-90c0-22ce3e482b28]    step_function()
+[MFLOG|0|2023-10-01T14:40:45.723756Z|runtime|24c21819-9d90-47f6-a6a7-b470cd85132a]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 129, in start
+[MFLOG|0|2023-10-01T14:40:45.723896Z|runtime|eebd8c99-6be8-4c53-b17e-15327f307a55]    print("Computing statistics for %s" % self.cdf.shape)
+[MFLOG|0|2023-10-01T14:40:45.724033Z|runtime|2bea6213-c728-4bff-8e89-771420ee47ab]TypeError: not all arguments converted during string formatting
+[MFLOG|0|2023-10-01T14:40:45.724178Z|runtime|b2332dd9-af97-4ed4-b9ac-d5bdb4644cf0]
+[MFLOG|0|2023-10-01T14:40:45.725165Z|runtime|e71159f1-11a0-4c33-b8ad-50a570fa9221]Task failed.

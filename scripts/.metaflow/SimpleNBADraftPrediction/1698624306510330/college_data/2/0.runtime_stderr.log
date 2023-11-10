@@ -1,0 +1,30 @@
+[MFLOG|0|2023-10-30T00:07:29.585885Z|runtime|cdd857a8-fe45-4bd5-966e-74d73f426a6f]<flow SimpleNBADraftPrediction step college_data> failed:
+[MFLOG|0|2023-10-30T00:07:29.731924Z|runtime|3e5d66f5-b725-4199-8e39-1f0bb2851626]    Internal error
+[MFLOG|0|2023-10-30T00:07:29.733109Z|runtime|83fc76ef-6c60-4327-9e79-5ccac3f91f35]Traceback (most recent call last):
+[MFLOG|0|2023-10-30T00:07:29.733399Z|runtime|69998d1a-4879-4de9-95ad-2e8a09c2219d]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-10-30T00:07:29.733683Z|runtime|0a938f7a-8b7e-4b8f-9359-328928f31f3a]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-10-30T00:07:29.733962Z|runtime|a19da712-51c6-4359-a089-b8126ffe643e]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-10-30T00:07:29.734237Z|runtime|aab4e1d3-0de4-4674-adc0-a31d6e82060e]    return self.main(args, kwargs)
+[MFLOG|0|2023-10-30T00:07:30.051463Z|runtime|8087c0c1-a770-47a4-a0f3-defab31d9226]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-10-30T00:07:30.051777Z|runtime|7e86de05-bf83-4474-aef2-8a845866d26e]    rv = self.invoke(ctx)
+[MFLOG|0|2023-10-30T00:07:30.051928Z|runtime|efc0953a-6084-47ac-b9ca-f810ff209d44]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-10-30T00:07:30.052069Z|runtime|5b994e82-497d-4f5e-becb-a803201107a3]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-10-30T00:07:30.052215Z|runtime|90eb5337-bd99-478b-b2a1-5d291dc58fc3]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-10-30T00:07:30.052350Z|runtime|7f244feb-2286-46bf-b413-b83f7bd847ab]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-10-30T00:07:30.052485Z|runtime|0635ec1e-44eb-4cde-86cc-c297a7ca4a74]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-10-30T00:07:30.052624Z|runtime|2d46f6e9-ff24-4f60-beb2-8f1d164ccc19]    return callback(args, kwargs)
+[MFLOG|0|2023-10-30T00:07:30.052758Z|runtime|bb8aaba6-acf2-4381-8851-f69911e5f739]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-10-30T00:07:30.052894Z|runtime|f559a762-bc9f-40ec-9677-22978504a1de]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-10-30T00:07:30.053026Z|runtime|10ac2282-55bd-4bb8-b563-79448481f99a]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-10-30T00:07:30.053166Z|runtime|d7896834-4b41-4946-95eb-8a3df58ced72]    task.run_step(
+[MFLOG|0|2023-10-30T00:07:30.053301Z|runtime|0929063b-1026-4523-9797-c5b9f877e7b7]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 583, in run_step
+[MFLOG|0|2023-10-30T00:07:30.053435Z|runtime|b251e6df-822e-45ee-9ce5-06a80a79b080]    self._exec_step_function(step_func)
+[MFLOG|0|2023-10-30T00:07:30.053567Z|runtime|6ab097fb-407f-4e9b-a3a9-a39b6c01b232]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/metaflow/task.py", line 57, in _exec_step_function
+[MFLOG|0|2023-10-30T00:07:30.053703Z|runtime|24947f53-8ba5-4dd7-a98b-013ad4dc649d]    step_function()
+[MFLOG|0|2023-10-30T00:07:30.053836Z|runtime|7d1f54af-6fe9-4312-93f3-9b9a8d393e96]  File "/TB10/Basketball/Git/draft_predictions/scripts/DraftPredictionPipeline.py", line 137, in college_data
+[MFLOG|0|2023-10-30T00:07:30.053969Z|runtime|990544d0-b0fd-49fe-aae2-f158c3bc41b1]    self.ndf = self.ndf.str.replace("---","0")
+[MFLOG|0|2023-10-30T00:07:30.054100Z|runtime|b103ccf4-7e49-479c-bda8-85c88aa4f6d5]  File "/home/t7610/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 5487, in __getattr__
+[MFLOG|0|2023-10-30T00:07:30.054235Z|runtime|4db4141f-ba87-4a01-a80c-35b466b0d9a5]    return object.__getattribute__(self, name)
+[MFLOG|0|2023-10-30T00:07:30.054367Z|runtime|012a0087-c3dd-42a2-b7da-78206f4ba78d]AttributeError: 'DataFrame' object has no attribute 'str'
+[MFLOG|0|2023-10-30T00:07:30.054505Z|runtime|57b26cee-149d-4fa7-ab7c-0c87f110b1d9]
+[MFLOG|0|2023-10-30T00:07:30.055167Z|runtime|b4653948-f546-453d-abe4-4faf6d371d5c]Task failed.
